@@ -1,0 +1,19 @@
+<svg viewBox="0 0 600 190" class="w-full h-full" fill="none" aria-hidden="true">
+    <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#27D3FF"></stop><stop offset="100%" stop-color="#7B6DFF"></stop></linearGradient>
+    </defs>
+    <!-- Grid lines -->
+    <line x1="0" y1="38" x2="600" y2="38" stroke="rgba(255,255,255,.06)"></line>
+    <line x1="0" y1="76" x2="600" y2="76" stroke="rgba(255,255,255,.06)"></line>
+    <line x1="0" y1="114" x2="600" y2="114" stroke="rgba(255,255,255,.06)"></line>
+    <line x1="0" y1="152" x2="600" y2="152" stroke="rgba(255,255,255,.06)"></line>
+    <!-- pH line -->
+    <path d="M0 120 C40 108,60 58,100 74 S158 146,200 104 S264 30,310 52 S380 138,430 98 S500 62,570 82 L600 78" stroke="#27D3FF" stroke-width="2.5" stroke-linecap="round"></path>
+    <!-- DO line -->
+    <path d="M0 135 C50 122,80 102,120 98 S192 70,240 86 S318 122,370 108 S450 92,520 100 L600 96" stroke="#7B6DFF" stroke-width="2" stroke-linecap="round" opacity="0.8"></path>
+    <!-- COD line -->
+    <path d="M0 105 C60 116,90 138,140 128 S210 96,260 108 S340 120,400 112 S480 104,560 110 L600 108" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.7"></path>
+    <!-- Threshold line -->
+    <line x1="0" y1="58" x2="600" y2="58" stroke="#EF4444" stroke-width="1" stroke-dasharray="6,4" opacity="0.5"></line>
+    <text x="8" y="53" fill="rgba(239,68,68,0.7)" font-size="9" font-family="Inter,sans-serif">CPCB Limit</text>
+</svg>

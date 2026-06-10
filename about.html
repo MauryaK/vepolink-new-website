@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Vepolink</title>
+<link rel="preload" href="assets/site.css" as="style" />
+<link rel="stylesheet" href="assets/site.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<script defer src="assets/site.js"></script>
+<style>
+  :root {
+    --ink: #0A1220;
+    --ink-2: #1A2333;
+    --ink-3: #2A3447;
+    --mute: #5C6573;
+    --mute-2: #8B92A0;
+    --line: #E2E5E1;
+    --line-2: #EEEFEA;
+    --paper: #F5F6F2;
+    --paper-2: #FAFAF7;
+    --card: #FFFFFF;
+    --violet: oklch(58% 0.21 290);
+    --cyan: oklch(78% 0.13 210);
+    --aqua: oklch(72% 0.14 200);
+    --signal-ok: oklch(65% 0.13 155);
+    --signal-warn: oklch(72% 0.16 75);
+    --signal-alert: oklch(64% 0.20 25);
+    --brand-grad: linear-gradient(95deg, oklch(58% 0.21 290) 0%, oklch(64% 0.18 250) 50%, oklch(78% 0.13 200) 100%);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper-2); color: var(--ink);
+    font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .mono { font-family: "Geist Mono", ui-monospace, monospace; font-feature-settings: "ss01"; }
+  .serif-i { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; }
+  ::selection { background: oklch(78% 0.13 210 / 0.35); color: var(--ink); }
+  a { color: inherit; }
+  button { font-family: inherit; }
+  .grad-text {
+    background: var(--brand-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  #root { min-height: 100vh; }
+
+  @media (max-width: 1080px) {
+    #about-main [style*="grid-template-columns"] {
+      grid-template-columns: 1fr !important;
+    }
+
+    #about-main [style*="gap: 96px"],
+    #about-main [style*="gap: 64px"],
+    #about-main [style*="gap: 48px"] {
+      gap: 32px !important;
+    }
+
+    #about-main [style*="justify-content: flex-end"] {
+      justify-content: flex-start !important;
+    }
+
+    #about-main [style*="align-self: end"] {
+      align-self: start !important;
+    }
+
+    #about-main [style*="repeat(5, 1fr)"],
+    #about-main [style*="repeat(4, 1fr)"],
+    #about-main [style*="repeat(3, 1fr)"] {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    #about-main .about-stats-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .about-page-section {
+      padding: 72px 24px !important;
+    }
+
+    .about-hero {
+      padding-top: 28px !important;
+      padding-bottom: 0 !important;
+    }
+
+    .about-cta-section {
+      padding: 72px 18px !important;
+    }
+
+    #about-main h1 {
+      font-size: clamp(42px, 13vw, 62px) !important;
+      line-height: 1 !important;
+    }
+
+    #about-main h2 {
+      font-size: clamp(32px, 10vw, 42px) !important;
+      line-height: 1.05 !important;
+    }
+
+    #about-main p {
+      font-size: 15.5px !important;
+      line-height: 1.58 !important;
+    }
+
+    #about-main [style*="grid-template-columns"] {
+      grid-template-columns: 1fr !important;
+    }
+
+    #about-main [style*="repeat(5, 1fr)"] {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    #about-main .about-stats-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    #about-main [style*="gap: 32px"],
+    #about-main [style*="gap: 24px"],
+    #about-main [style*="gap: 16px"] {
+      gap: 18px !important;
+    }
+
+    #about-main [style*="margin-top: 64px"],
+    #about-main [style*="margin-top: 48px"] {
+      margin-top: 32px !important;
+    }
+
+    #about-main [style*="margin-bottom: 56px"] {
+      margin-bottom: 32px !important;
+    }
+
+    #about-main [style*="padding: 72px 64px"] {
+      padding: 42px 24px !important;
+    }
+
+    #about-main [style*="min-height: 380px"],
+    #about-main [style*="min-height: 280px"] {
+      min-height: auto !important;
+    }
+
+    #about-main [style*="height: 220px"] {
+      height: 180px !important;
+    }
+
+    #about-main button {
+      width: 100%;
+      min-height: 46px;
+      justify-content: center;
+    }
+
+    #about-main svg {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .about-page-section {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    #about-main [style*="padding: 22px"],
+    #about-main [style*="padding: 18px"],
+    #about-main [style*="padding: 16px"] {
+      padding: 16px !important;
+    }
+
+    #about-main .mono {
+      overflow-wrap: anywhere;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="brand.jsx"></script>
+<script type="text/babel" src="dashboard.jsx"></script>
+<script type="text/babel" src="about-sections.jsx"></script>
+<script type="text/babel" src="about-app.jsx"></script>
+</body>
+</html>
