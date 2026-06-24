@@ -85,7 +85,7 @@ const pageDotClass = (isActive) =>
 
 const ProductHero = () => {
   const thumb = [
-    { id: 1, img: "assets/images/p1-Photoroom.png" },
+    { id: 1, img: "assets/images/prod_1.png" },
     { id: 2, img: "assets/images/p1-Photoroom.png" },
   ];
 
@@ -117,12 +117,12 @@ const ProductHero = () => {
               ))}
             </div>
 
-            <div className="order-1 md:order-2 w-full max-w-[520px] mx-auto">
+            <div className="order-1 md:order-2 w-full max-w-full">
               <Reveal delay={120 * 2}>
                 <img
                   src={activeThumb?.img}
                   alt="Vepolink Command Center"
-                  className="w-full h-auto relative z-10 object-contain  max-w-[320px] md:max-w-none mx-auto"
+                  className="max-w-full h-[420px] relative z-10 object-contain  max-w-[320px] mx-auto"
                   data-tilt={activeThumb?.id}
                 />
               </Reveal>

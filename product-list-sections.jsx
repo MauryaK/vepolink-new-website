@@ -56,120 +56,105 @@ const ProductData = () => {
         {
           text: "Optics-1000 Multi Parameter",
           href: "../../products/analyzers/optics-1000.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/optics1000-multi-parameter.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Analyzer-Optics1000-MultiParameter.pdf",
         },
         {
           text: "Optics-1000 Alkalinity",
           href: "../../products/analyzers/optics-1000-alkalinity.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Alkalinity.pdf",
         },
         {
           text: "Optics-1000 Boron (Lr)",
           href: "../../products/analyzers/optics-1000-boron-lr.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Boron-(Lr).pdf",
         },
         {
           text: "Optics-1000 Boron (Hr)",
           href: "../../products/analyzers/optics-1000-boron-hr.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Boron-(Hr).pdf",
         },
         {
           text: "Optics-1000 Chloride (Cl-)",
           href: "../../products/analyzers/optics-1000-chloride.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Chloride-(Cl-).pdf",
         },
         {
           text: "Optics-1000 Chromium VI (Cr)",
           href: "../../products/analyzers/optics-1000-chromium.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Chromium-VI-(Cr).pdf",
         },
         {
           text: "Optics-1000 Cyanide (CN-)",
           href: "../../products/analyzers/optics-1000-cyanide.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Cyanide.pdf",
         },
         {
           text: "Optics-1000 Hydrazine (N2H4)",
           href: "../../products/analyzers/optics-1000-hydrazine.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Hydrazine.pdf",
         },
         {
           text: "Optics-1000 Iron (Lr)",
           href: "../../products/analyzers/optics-1000-iron-lr.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Iron-(Lr).pdf",
         },
         {
           text: "Optics-1000 Nickel (Ni)",
           href: "../../products/analyzers/optics-1000-nickel.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Nickel.pdf",
         },
         {
           text: "Optics-1000 Phenol",
           href: "../../products/analyzers/optics-1000-phenol.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Phenol.pdf",
         },
         {
           text: "Optics-1000 Phosphate (Hr)",
           href: "../../products/analyzers/optics-1000-phosphate-hr.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Phosphate-(Hr).pdf",
         },
         {
           text: "Optics-1000 Phosphate (Lr)",
           href: "../../products/analyzers/optics-1000-phosphate-lr.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Phosphate-(Lr).pdf",
         },
         {
           text: "Optics-1000 Silica (Hr)",
           href: "../../products/analyzers/optics-1000-silica-hr.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Silica-(Hr).pdf",
         },
         {
           text: "Optics-1000 Silica (Lr)",
           href: "../../products/analyzers/optics-1000-silica-lr.html",
-          image:
-            "https://www.advanceanalytik.com/products/productImages/img026.png",
+          image: "assets/images/prod_1.png",
           datasheet:
             "https://www.advanceanalytik.com/products/productsDataSheets/Optics-1000-Silica-(Lr).pdf",
         },
@@ -656,9 +641,34 @@ const ProductListing = () => {
               </div>
               <div className="p-3">
                 <div className="font-bold text-base">{item.text}</div>
-                <div className="font-normal text-sm text-(--muted)">
-                  {list.text}
+                <div className="bg-(--paper-2) flex flex-wrap gap-1 rounded border border-(--line-2) p-2">
+                  {[
+                    "Alkalinity",
+                    "Boron",
+                    "Chloride",
+                    "Chromium VI",
+                    "Total Chromium",
+                    "Cyanide",
+                    "Hydrazine",
+                    "Iron",
+                    "Nickel",
+                    "Phenol",
+                    "Phosphate",
+                    "Silica",
+                    "Total Hardness",
+                    "Zinc",
+                  ].map((p, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 text-[12px] text-(--ink-3) border border-(--line-2) bg-(--card) rounded-full"
+                    >
+                      {p}
+                    </span>
+                  ))}
                 </div>
+                {/* <div className="font-normal text-sm text-(--muted)">
+                  {list.text}
+                </div> */}
               </div>
             </div>
           </div>
