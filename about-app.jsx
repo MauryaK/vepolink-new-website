@@ -2,10 +2,15 @@
 
 const AboutApp = () => (
   <>
-    <a className="skip-link" href="#about-main">Skip to content</a>
+    <a className="skip-link" href="#about-main">
+      Skip to content
+    </a>
     <site-header></site-header>
     <main id="about-main">
       <AboutHero />
+      <div className="shell">
+        <Dashboard />
+      </div>
       <Vision />
       <Technology />
       <Commitment />

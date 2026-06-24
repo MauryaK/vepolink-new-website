@@ -50,7 +50,7 @@ const Reveal = ({
 };
 
 const sectionClass =
-  "product-page-section px-4 sm:px-6 lg:px-12 pt-16 md:pt-24 lg:pt-32 pb-16 md:pb-20 lg:pb-24 relative block overflow-hidden";
+  "product-page-section md:px-4 px-0 sm:px-6 lg:px-12 pt-16 md:pt-24 lg:pt-32 pb-16 md:pb-20 lg:pb-24 relative block overflow-hidden";
 
 const sectionHeadingGrid =
   "grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 lg:gap-16 mb-10 lg:mb-14";
@@ -93,11 +93,11 @@ const ProductHero = () => {
   const activeThumb = thumb[active];
 
   return (
-    <section className="product-page-section product-hero min-h-[auto] md:min-h-[var(--heroheight)] px-4 sm:px-6 lg:px-12 pt-20 md:pt-10 relative overflow-hidden flex flex-col items-center justify-center">
-      <div className="@container py-6 md:py-8 relative z-10 w-full">
+    <section className="product-page-section product-hero min-h-[auto] md:min-h-[var(--heroheight)] px-4 sm:px-6 lg:px-12 pt-5 md:pt-10 relative overflow-hidden flex flex-col items-center justify-center">
+      <div className="@container py-0 md:py-8 relative z-10 w-full">
         <div className="flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-12 items-center">
           <div className="w-full md:w-[55%] flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-12">
-            <div className="order-2 md:order-1 w-full md:w-[110px] lg:w-[130px] flex md:flex-col justify-center md:justify-start gap-2 overflow-x-auto md:overflow-visible pb-1">
+            <div className="order-2 md:order-1 w-full md:w-[110px] lg:w-[130px] flex md:flex-col justify-center  gap-2 overflow-x-auto md:overflow-visible pb-1">
               {thumb.map((t, index) => (
                 <Reveal key={t.id} delay={120 * index}>
                   <button
@@ -122,7 +122,7 @@ const ProductHero = () => {
                 <img
                   src={activeThumb?.img}
                   alt="Vepolink Command Center"
-                  className="w-full h-auto relative z-10 object-contain"
+                  className="w-full h-auto relative z-10 object-contain  max-w-[320px] md:max-w-none mx-auto"
                   data-tilt={activeThumb?.id}
                 />
               </Reveal>
@@ -174,21 +174,18 @@ const ProductHero = () => {
                 <h1
                   style={{
                     fontSize: "clamp(2rem, 4.5vw, 4.5rem)",
-                    lineHeight: 1.02,
+                    lineHeight: window.screen.width < 767 ? 1.3 : 1.02,
                     letterSpacing: "-0.03em",
                     margin: 0,
                     textWrap: "balance",
                   }}
                 >
-                  Extractive Aqualog 4000 /5000 UVS
+                  Online Water analyzer
                 </h1>
               </Reveal>
 
               <Reveal delay={120 * 2}>
-                <div
-                  className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4"
-                  style={{ marginTop: 28, alignItems: "end" }}
-                >
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 items-end md:mt-[28px] mt-[15px]">
                   <p
                     style={{
                       fontSize: "clamp(1rem, 1.4vw, 1.1875rem)",
@@ -294,7 +291,7 @@ const ProductOverView = () => {
                 maxWidth: 680,
               }}
             >
-              Online Water analyzer UV300
+              Online Water analyzer
             </h2>
           </Reveal>
 
@@ -1774,8 +1771,8 @@ const Partners = () => {
   return (
     <section
       style={{
-        padding: "15px 0",
-        marginTop: "25px",
+        padding: window.screen.width < 767 ? "0px" : "15px 0",
+        marginTop: window.screen.width < 767 ? "0px" : "25px",
       }}
     >
       <div
