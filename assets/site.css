@@ -1781,9 +1781,9 @@ h2 {
     padding: 64px 0;
   }
 
-  .rule-row {
-    /* grid-template-columns: 16px 1fr; */
-  }
+  /* .rule-row {
+    grid-template-columns: 16px 1fr;
+  } */
 
   .rule-row small,
   .rule-row b,

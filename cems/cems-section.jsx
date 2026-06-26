@@ -103,7 +103,9 @@ const ProductListCard = () => {
       <div className="shell">
         <div className="w-full grid grid-cols-3 gap-0  border border-(--line) rounded p-4">
           <div className="col-span-1 ">
-            <div className="w-[100%] m-auto min-h-[320px] bg-gray-100 rounded-sm border border-(--line)"></div>
+            <div className="w-[100%] m-auto min-h-[320px] bg-white rounded-sm border border-(--line)">
+              <img src="assets/images/emission.png" />
+            </div>
           </div>
           <div className="col-span-2 px-5">
             <div className="w-full py-2">

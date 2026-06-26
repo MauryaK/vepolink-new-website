@@ -97,7 +97,7 @@ const ProductHero = () => {
       <div className="@container py-0 md:py-8 relative z-10 w-full">
         <div className="flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-12 items-center">
           <div className="w-full md:w-[55%] flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-12">
-            <div className="order-2 md:order-1 w-full md:w-[110px] lg:w-[130px] flex md:flex-col justify-center  gap-2 overflow-x-auto md:overflow-visible pb-1">
+            <div className="order-2 md:order-1 w-full md:w-[110px] lg:w-[100px] flex md:flex-col justify-center items-center  gap-2 overflow-x-auto md:overflow-visible pb-1">
               {thumb.map((t, index) => (
                 <Reveal key={t.id} delay={120 * index}>
                   <button
@@ -118,11 +118,11 @@ const ProductHero = () => {
             </div>
 
             <div className="order-1 md:order-2 w-full max-w-full">
-              <Reveal delay={120 * 2}>
+              <Reveal delay={180 * 2}>
                 <img
                   src={activeThumb?.img}
                   alt="Vepolink Command Center"
-                  className="max-w-full h-[420px] relative z-10 object-contain  max-w-[320px] mx-auto"
+                  className="max-w-full h-[370px] relative z-10 object-contain  max-w-[320px] mx-auto"
                   data-tilt={activeThumb?.id}
                 />
               </Reveal>
@@ -199,12 +199,11 @@ const ProductHero = () => {
                     Complete range of analyzers with sampling for Biological and
                     Chemical Parameters
                   </p>
-                  <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }} />
                 </div>
               </Reveal>
 
               <Reveal delay={120 * 3}>
-                <Partners />
+                <FeaturesSlides />
               </Reveal>
 
               <div
@@ -213,6 +212,9 @@ const ProductHero = () => {
               >
                 <Reveal delay={120 * 4}>
                   <button
+                    onClick={() =>
+                      (window.location.href = "mailto:support@vepolink.com")
+                    }
                     style={{
                       minHeight: 44,
                       padding: "12px 22px",
@@ -234,6 +236,9 @@ const ProductHero = () => {
                 </Reveal>
                 <Reveal delay={120 * 5}>
                   <button
+                    onClick={() =>
+                      window.open("docs/Advance_Analytik_Company_Profile.pdf")
+                    }
                     style={{
                       minHeight: 44,
                       padding: "12px 22px",
@@ -245,8 +250,10 @@ const ProductHero = () => {
                       borderRadius: 99,
                       cursor: "pointer",
                     }}
+                    className="flex flex-row gap-2"
                   >
-                    Download Brochure
+                    <span>Download Brochure</span>
+                    <Icon name="cloud" size={24} color="currentColor" />
                   </button>
                 </Reveal>
               </div>
@@ -1760,12 +1767,14 @@ const ShadeBg = () => (
   </div>
 );
 
-const Partners = () => {
-  const partners = [
+const FeaturesSlides = () => {
+  const features_list = [
     "User Friendly Interface",
     "Multiplexing System",
     "Automatic Cleaning",
     "Up to 6 different streams",
+    "Touch screen",
+    "CE, EN 61010-1, EN 61326, IP66, IP68",
   ];
 
   return (
@@ -1793,24 +1802,26 @@ const Partners = () => {
             padding: "12px 24px",
           }}
         >
-          {[...partners, ...partners].map((p, i) => (
-            <span
-              key={i}
-              style={{
-                fontFamily: "Geist",
-                fontSize: "clamp(14px, 2vw, 18px)",
-                fontWeight: 600,
-                color: "var(--ink-3)",
-                whiteSpace: "nowrap",
-              }}
-            >
+          {[...features_list, ...features_list, ...features_list].map(
+            (p, i) => (
               <span
-                className="w-[6px] h-[6px] bg-[var(--ink-3)] mr-2.5 inline-block"
-                style={{ verticalAlign: "middle" }}
-              ></span>
-              {p}
-            </span>
-          ))}
+                key={i}
+                style={{
+                  fontFamily: "Geist",
+                  fontSize: "clamp(14px, 2vw, 18px)",
+                  fontWeight: 600,
+                  color: "var(--ink-3)",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                <span
+                  className="w-[6px] h-[6px] bg-[var(--ink-3)] mr-2.5 inline-block"
+                  style={{ verticalAlign: "middle" }}
+                ></span>
+                {p}
+              </span>
+            ),
+          )}
         </div>
         <style>{`@keyframes vepoScroll { from { transform: translateX(0) } to { transform: translateX(-50%) } }`}</style>
       </div>

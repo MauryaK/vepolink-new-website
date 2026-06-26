@@ -80,6 +80,17 @@
           <a href="mailto:hello@vepolink.com">SLA</a>
           <a href="mailto:hello@vepolink.com">Data residency</a>
         </nav>
+        <div class="flex flex-row gap-2">
+        <div class='bg-white w-[50px] h-[50px] border border-(--line) rounded flex flex-col items-center justify-center'>
+        <img class='max-w-auto h-[30px]' src='assets/images/certification/ce.png' />
+        </div>
+        <div class='bg-white w-[50px] h-[50px] border border-(--line) rounded flex flex-col items-center justify-center'>
+        <img class='max-w-auto h-[30px]' src='assets/images/certification/npl.png' />
+        </div>
+        <div class='bg-white w-[50px] h-[50px] border border-(--line) rounded flex flex-col items-center justify-center'>
+        <img class='max-w-auto h-[30px]' src='assets/images/certification/tuv-rheinland-advertising.png' />
+        </div>
+        </div>
       </div>
     </footer>
   `;
@@ -111,6 +122,7 @@
   if (!customElements.get("site-footer")) {
     customElements.define("site-footer", SiteFooter);
   }
+
 
   window.addEventListener(
     "scroll",
@@ -151,3 +163,4 @@
     }, 2200);
   }
 })();
+

@@ -98,6 +98,7 @@ const Icon = ({ name, size = 18, color = "currentColor" }) => {
     user: <path d="M4 21a8 8 0 0 1 16 0 M12 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />,
     play: <path d="M6 4l14 8-14 8V4z" fill={color} />,
     map: <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14" />,
+    plush: <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
   };
   return <svg {...props}>{paths[name]}</svg>;
 };
