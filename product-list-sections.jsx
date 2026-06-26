@@ -63,30 +63,6 @@ const ProductData = () => {
         },
       ],
     },
-    // {
-    //   text: "High Temperature Analyzer",
-    //   href: "../../products/high-temperature-analyzer.html",
-    //   children: [
-    //     {
-    //       text: "Egetra-COD-1000",
-    //       href: "../../products/high-temperature-analyzer/egetra-cod-1000.html",
-    //       parameter: ["COD"],
-    //       image:
-    //         "https://www.advanceanalytik.com/products/productImages/egetra-cod-1000.png",
-    //       datasheet:
-    //         "https://www.advanceanalytik.com/products/productsDataSheets/Egetra-COD-1000.pdf",
-    //     },
-    //     {
-    //       text: "Egetra-TOC-1000",
-    //       href: "../../products/high-temperature-analyzer/egetra-toc-1000.html",
-    //       parameter: ["TOC"],
-    //       image:
-    //         "https://www.advanceanalytik.com/products/productImages/egetra-toc-1000.png",
-    //       datasheet:
-    //         "https://www.advanceanalytik.com/products/productsDataSheets/Egetra-TOC-1000.pdf",
-    //     },
-    //   ],
-    // },
     {
       text: "Controllers",
       href: "../../products/controllers.html",
